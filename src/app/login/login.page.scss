@@ -1,0 +1,70 @@
+.icon{
+    font-size: 350%;
+    margin-top: 3cm;
+    text-align: center;
+    color: rgb(0, 255, 0);
+}
+.text{
+    font-family: Helvetica;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-left: 1cm;
+    margin-bottom: 30px;
+}
+.destaque{
+    font-size: large;
+    font-family: cursive;
+    color: rgb(0, 255, 0);
+    
+}
+ion-content {
+    --background: rgb(0, 0, 0); 
+  }
+
+.imputs{
+    color: white;
+    background-color: gray;
+    margin-left: 1cm;
+    
+  }
+ 
+  .input{
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 100px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+  }
+
+  ion-input.custom {
+    --background: #373737;
+    --color: #fff;
+    --placeholder-color: #ddd;
+    --placeholder-opacity: 0.8;
+  
+    --padding-bottom: 10px;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --padding-top: 10px;
+    --padding-left: ;
+  }
+
+  .custom-button {
+    width: 320px; 
+    --ion-color-base: rgb(8, 250, 0); /* Defina a cor RGB desejada */
+   color: rgb(255, 255, 255); /* Defina a cor do texto */
+  --background: rgb(114, 231, 110); /* Defina o fundo transparente */
+  --background-activated: rgb(30, 182, 25); /* Defina o fundo transparente quando ativado */
+  --background-focused: rgb(8, 250, 0); /* Defina o fundo transparente quando focado */
+  --background-hover: rgb(77, 122, 75); 
+    
+  }
+
+  .button-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+    margin-top: 20px;
+  }
