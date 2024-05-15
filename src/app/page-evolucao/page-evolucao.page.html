@@ -1,0 +1,107 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <div class="titulo">
+      <ion-title>Treiny</ion-title>
+    </div>
+  </ion-header>
+
+  <div class="back">
+    <ion-icon name="menu-outline" slot="start" size="large"></ion-icon>
+  </div>
+
+<br> <br>
+<div class="profile-container">
+  <div class="profile-header">
+      <img src="https://p2.trrsf.com.br/image/fget/cf/478/481/smart/images.terra.com/2023/05/23/501704476-victor-coelho-1675430507059v2960x960-e1675445695831.jpg" alt="Foto de Perfil" class="profile-image">
+  </div>
+  <div class="profile-body">
+      <ul class="profile-list">
+          <li class="profile-field">
+              <span class="field-label">Nome:</span>
+              <span class="field-value">João da Silva</span>
+          </li>
+          <li class="profile-field">
+              <span class="field-label">Idade:</span>
+              <span class="field-value">30 anos</span>
+          </li>
+          <li class="profile-field">
+              <span class="field-label">Peso:</span>
+              <span class="field-value">70 kg</span>
+          </li>
+          <li class="profile-field">
+              <span class="field-label">Altura:</span>
+              <span class="field-value">1.75 m</span>
+          </li>
+          <li class="profile-field">
+              <span class="field-label">Massa Magra:</span>
+              <span class="field-value">60 kg</span>
+          </li>
+          <li class="profile-field">
+              <span class="field-label">Gordura:</span>
+              <span class="field-value">10%</span>
+          </li>
+          <li class="profile-field">
+              <span class="field-label">Calorias diárias:</span>
+              <span class="field-value">2000 kcal</span>
+          </li>
+          <li class="profile-field">
+              <span class="field-label">Litros de água:</span>
+              <span class="field-value">2 litros</span>
+          </li>
+      </ul>
+  </div>
+</div>
+
+<div class="evolution-table">
+  <table>
+      <thead>
+          <tr>
+              <th colspan="2">Evolução</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td><i class="icon fas fa-plus-circle"></i> Ganho de Massa:</td>
+              <td>5 kg</td>
+          </tr>
+          <tr>
+              <td><i class="icon fas fa-minus-circle"></i> Perda de Gordura:</td>
+              <td>2%</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+</ion-content>
+
+
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+
+    <ion-tab-button tab="home" routerLink="/home" class="custom-button">
+    <ion-icon aria-hidden="true" name="home-outline"></ion-icon>
+    <span class="destaque"><ion-label>Home</ion-label></span>
+    </ion-tab-button>
+
+    <ion-tab-button tab="page-evolucao" routerLink="/page-evolucao" class="custom-button">
+    <ion-icon aria-hidden="true" name="add-circle-outline"></ion-icon>
+    <span class="destaque"><ion-label>Evolução</ion-label></span>
+    </ion-tab-button>
+
+    <ion-tab-button tab="page-treinos" routerLink="/page-treinos" class="custom-button">
+    <ion-icon aria-hidden="true" name="barbell-outline"></ion-icon>
+    <span class="destaque"><ion-label>Treinos</ion-label></span>
+    </ion-tab-button>
+
+    <ion-tab-button tab="page-dieta" routerLink="/page-dieta" class="custom-button">
+    <ion-icon aria-hidden="true" name="nutrition-outline"></ion-icon>
+    <span class="destaque"><ion-label>Dieta</ion-label></span>
+    </ion-tab-button>
+
+
+  </ion-tab-bar>
+
+
+</ion-tabs>
+

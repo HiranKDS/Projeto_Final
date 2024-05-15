@@ -37,6 +37,23 @@ ion-content {
 ion-tab-bar{--background: rgb(15, 15, 15);}
 
 .custom-button {
-  color: white;
+  color: rgb(0, 255, 0);
   
+}
+
+.destaque{
+  color: rgb(255, 255, 255);
+  
+}
+
+.back{
+  color: rgb(0, 255, 0);
+margin-left: 330px;
+position: absolute;
+top: 15px;
+
+}
+.button-container{
+    
+  margin-left: 240px;
 }
