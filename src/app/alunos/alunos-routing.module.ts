@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AlunosPage } from './alunos.page';

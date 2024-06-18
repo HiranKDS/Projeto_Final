@@ -1,14 +1,17 @@
+
 <ion-content [fullscreen]="true">
 
-  <ion-header>
-    <div class="titulo">
-      <ion-title>Treiny</ion-title>
-    </div>
-  </ion-header>
-
-  <div class="back">
-    <ion-icon name="menu-outline" slot="start" size="large"></ion-icon>
+<ion-header>
+  <div class="titulo">
+    <ion-title>Treiny</ion-title>
   </div>
+</ion-header>
+
+<div class="back">
+  <ion-button (click)="showLogoutAlert()" class="icon-button">
+    <ion-icon name="menu-outline" slot="icon-only" size="large"></ion-icon>
+  </ion-button>
+</div>
 <br>
   <ion-card>
     <img alt="treinos" src="https://greenlifeacademias.com.br/wp/wp-content/uploads/2021/09/1.png" />
@@ -20,7 +23,7 @@
     <ion-card-content>
       6 Dicas para iniciantes
     
-    <div class="button-container"><ion-button size="small" href="https://lev.pt/os-melhores-legumes-para-a-sua-dieta-cetogenica" target="_blank">Acessar</ion-button></div>
+    <div class="button-container"><ion-button size="small" href="https://www.tuasaude.com/treino-de-hipertrofia-para-ganhar-massa-muscular/" target="_blank">Acessar</ion-button></div>
   </ion-card-content>
   </ion-card>
 
@@ -28,55 +31,41 @@
     <ion-list [inset]="true" >
       <ion-item color="light">
         <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-        <ion-input aria-label="Task name" value="Segunda-Feira - Treino A"></ion-input>
+        <ion-input aria-label="Task name" value="Segunda-Feira "></ion-input>
       </ion-item>
       <ion-item color="light">
         <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-        <ion-input aria-label="Task name" value="Terça-Feira - Treino B"></ion-input>
+        <ion-input aria-label="Task name" value="Terça-Feira "></ion-input>
       </ion-item>
       <ion-item color="light">
         <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-        <ion-input aria-label="Task name" value="Quarta-Feira - Treino C"></ion-input>
+        <ion-input aria-label="Task name" value="Quarta-Feira "></ion-input>
       </ion-item>
       <ion-item color="light">
         <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
-        <ion-input aria-label="Task name" value="Sexta-Feira - Treino D"></ion-input>
+        <ion-input aria-label="Task name" value="Quinta-Feira"></ion-input>
+      </ion-item>
+      <ion-item color="light">
+        <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+        <ion-input aria-label="Task name" value="Sexta-Feira "></ion-input>
       </ion-item>
 
     </ion-list>
 
+    <ion-card>
+      <img alt="treinos" src="https://static.tuasaude.com/media/article/xd/cb/leg-press_62794_l.jpg" />
+      <ion-card-header>
+        <ion-card-title>Leg press: como fazer Corretamente</ion-card-title>
+        <ion-card-subtitle>Site Treinos Web</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Como desenvolver pernas no Leg Press
+      
+      <div class="button-container"><ion-button size="small" href="https://thiagovarella.com.br/blog/leg-press-como-fazer-corretamente-e-ter-mais-resultados/" target="_blank">Acessar</ion-button></div>
+    </ion-card-content>
+    </ion-card>
+
 
 </ion-content>
-
-
-
-<ion-tabs>
-
-  <ion-tab-bar slot="bottom">
-
-    <ion-tab-button tab="home" routerLink="/home" class="custom-button">
-    <ion-icon aria-hidden="true" name="home-outline"></ion-icon>
-    <span class="destaque"><ion-label>Home</ion-label></span>
-    </ion-tab-button>
-
-    <ion-tab-button tab="page-evolucao" routerLink="/page-evolucao" class="custom-button">
-    <ion-icon aria-hidden="true" name="add-circle-outline"></ion-icon>
-    <span class="destaque"><ion-label>Evolução</ion-label></span>
-    </ion-tab-button>
-
-    <ion-tab-button tab="page-treinos" routerLink="/page-treinos" class="custom-button">
-    <ion-icon aria-hidden="true" name="barbell-outline"></ion-icon>
-    <span class="destaque"><ion-label>Treinos</ion-label></span>
-    </ion-tab-button>
-
-    <ion-tab-button tab="page-dieta" routerLink="/page-dieta" class="custom-button">
-    <ion-icon aria-hidden="true" name="nutrition-outline"></ion-icon>
-    <span class="destaque"><ion-label>Dieta</ion-label></span>
-    </ion-tab-button>
-
-
-  </ion-tab-bar>
-
-
-</ion-tabs>
 

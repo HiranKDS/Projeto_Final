@@ -22,10 +22,52 @@ ion-content {
     --background: rgb(0, 0, 0); 
   }
 
+  .custom2{
+    position: absolute;
+    margin-top: 0px;
+    text-align: start;
+    top: 706px;
+    left: 120px;
+  
+    }
+  
+    .text3{
+      font-family: Helvetica;
+      text-align: left;
+      color: rgb(255, 255, 255);
+      margin-left: 1cm;
+      font-size: small;
+      position: absolute;
+      top: 710px;
+    
+    }
+
 .imputs{
     color: white;
     background-color: gray;
     margin-left: 1cm;
+    
+  }
+
+  form{
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 100%; /* ou outro valor fixo, por exemplo, 500px */
+  height: auto; /* ou outro valor fixo, por exemplo, 600px */
+  overflow: auto; 
+  }
+
+  .custom-button-e {
+    padding-left: 10px;
+    padding-top: 20px;
+    --ion-color-base: rgb(8, 250, 0); /* Defina a cor RGB desejada */
+   color: rgb(8, 0, 0); /* Defina a cor do texto */
+  --background: rgb(114, 231, 110); /* Defina o fundo transparente */
+  --background-activated: rgb(30, 182, 25); /* Defina o fundo transparente quando ativado */
+  --background-focused: rgb(8, 250, 0); /* Defina o fundo transparente quando focado */
+  --background-hover: rgb(77, 122, 75); 
+    display: flex; 
+    justify-content: center; 
     
   }
  
@@ -94,4 +136,47 @@ ion-content {
   
   }
 
+
+
+  .icon {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .text {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .toggle-label {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .toggle {
+    transform: scale(0.8); /* Adjust scale as needed */
+  }
+  
+  .text3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .custom-button-e {
+    margin-top: 20px;
+  }
+  
+  .custom2 {
+    display: block;
+    margin: 19px auto;
+    margin-left: 3px;
+  }
+  
   

@@ -15,35 +15,50 @@
 
 
     <div class="text">
-    <p>Personal Trainer <span class="destaque">Treiny!</span> </p> 
-    
+    <p>Personal Treiner <span class="destaque">Treiny!</span> </p> 
     
     
     </div>
 
-    <div class="input">
-      <ion-input label="Email" label-placement="floating" fill="solid" color="light" placeholder="Enter text"></ion-input>
-     
-    </div>
 
-    <div class="input">
-      <ion-input label="Senha" label-placement="floating" fill="solid" color="light" placeholder="Enter text"></ion-input>
-     
-    </div>
+    <form [formGroup]="logar" (ngSubmit)="submitForm()" novalidate >
+      <ion-item >
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
 
-    <div class="text2">
-      Não tem cadastro? </div>
-        <ion-button routerLink="/cadastro" fill="clear" class="custom" size="small">Clique Aqui</ion-button>
+      <!--Mensagens de Erro-->
+      <span *ngIf="logar.get('email')?.touched &&
+      logar.get('email')?.errors?.['required']">Email é obrigatório</span>
+      <span  *ngIf="logar.get('email')?.dirty &&
+      logar.get('email')?.errors?.['email']">Formato de Email Inválido</span>
+      <!--Mensagens de Erro-->
+
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" formControlName="senha"></ion-input>
+      </ion-item>
+      
+            <!--Mensagens de Erro-->
+            <span *ngIf="logar.get('senha')?.touched &&
+            logar.get('senha')?.errors?.['required']">Senha é obrigatória</span>
+            <span  *ngIf="logar.get('senha')?.dirty &&
+            logar.get('senha')?.errors?.['minlength']">A senha é de no mínimo 6 caracteres</span>
+            <!--Mensagens de Erro-->
+            <br><br>
+      <ion-button expand="full"  class="custom-button-e" type="submit">Entrar</ion-button>
+  
+
+      
+    </form>
     
-    
-
-    <div class="button-container">
-      <ion-button routerLink="/home-treiner" class="custom-button">Entrar</ion-button>
-    </div>
-
-    <div class="text3">
-      Voltar para login</div>
-        <ion-button routerLink="/login" fill="clear" class="custom2" size="small">Clique Aqui</ion-button>
-
-</ion-header>
+  </ion-header>
+  
 </ion-content>
+<div class="text2">
+  Não tem cadastro </div>
+    <ion-button routerLink="/cadastro" fill="clear" class="custom" size="small">Clique Aqui</ion-button>
+
+<div class="text3">
+  Voltar para login aluno </div>
+    <ion-button routerLink="/login" fill="clear" class="custom2" size="small">Clique Aqui</ion-button>
